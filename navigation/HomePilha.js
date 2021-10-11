@@ -5,7 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 
 const Stack = createStackNavigator();
 
-export default function HomeStack() {
+export default function HomePilha() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name='Home' component={HomeScreen} />

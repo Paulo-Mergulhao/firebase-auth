@@ -6,12 +6,7 @@ import { StyleSheet, Text, View, Button as RNButton } from 'react-native';
 import { Button, InputField, ErrorMessage } from '../components';
 import Firebase from '../config/firebase';
 
-//import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-
 const auth = Firebase.auth();
-
-//const authGoogle = getAuth();
-
 
 
 export default function LoginScreen({ navigation }) {
@@ -41,31 +36,6 @@ export default function LoginScreen({ navigation }) {
     }
   };
 
-  /*const onGoogle = async () => {
-    
-      signInWithPopup(authGoogle, provider)
-      .then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const user = result.user;
-        // ...
-      }).catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
-      })
-
-  };*/
-
-
-  
 
 
   return (

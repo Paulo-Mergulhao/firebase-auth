@@ -6,7 +6,7 @@ import SignupScreen from '../screens/SignupScreen';
 
 const Stack = createStackNavigator();
 
-export default function AuthStack() {
+export default function AuthPilha() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name='Login' component={LoginScreen} />
